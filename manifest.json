@@ -1,0 +1,21 @@
+﻿{
+    "manifest_version": 2,
+    "name": "HttpToHttps",
+    "version": "1.0",
+    "description": "HttpToHttps",
+  "content_scripts": [
+    {
+      "matches": [ "*://*/" ],
+      "js": [
+        "jquery-1.10.2.min.js"
+         ,"background.js"
+      ]
+    }
+  ],
+  //"background" : { "scripts": ["background.js"] },
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ]  
+}
